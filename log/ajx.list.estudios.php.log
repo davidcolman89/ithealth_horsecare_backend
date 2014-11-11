@@ -1,0 +1,279 @@
+2014/06/04 19:28:30 - 25557 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio' at line 7 - sql: SELECT
+'' AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs,
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:28:30 - 25557 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio' at line 7 - sql: SELECT
+'' AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs,
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:31 - 25668 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:31 - 25668 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:34 - 25668 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:34 - 25668 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:41 - 31180 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:41 - 31180 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:54 - 28068 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/04 19:35:54 - 28068 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'archivo.nombre' in 'field list' - sql: SELECT
+CONCAT_WS('.',archivo.nombre,archivo.extension) AS archivo,
+estados.estado,
+estudios_tipo.tipo,
+estudios.doctor_nombre,
+estudios.obs
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+2014/06/15 05:46:21 - 18095 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.' at line 4 - sql: SELECT
+archivos.nombre AS archivo,
+estudios.id_estado
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.obs,
+equinos.nombre AS 'equino_nombre'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/06/15 05:46:21 - 18095 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.' at line 4 - sql: SELECT
+archivos.nombre AS archivo,
+estudios.id_estado
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.obs,
+equinos.nombre AS 'equino_nombre'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+INNER JOIN problemas ON problemas.id = evoluciones.id_problema
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/06/15 05:46:35 - 18885 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.' at line 4 - sql: SELECT
+archivos.nombre AS archivo,
+estudios.id_estado
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.obs,
+equinos.nombre AS 'equino_nombre'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/06/15 05:46:35 - 18885 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.' at line 4 - sql: SELECT
+archivos.nombre AS archivo,
+estudios.id_estado
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+estudios.doctor_nombre,
+estudios.obs,
+equinos.nombre AS 'equino_nombre'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+INNER JOIN problemas ON problemas.id = evoluciones.id_problema
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/06/24 19:40:33 - 6935 - ajx.list.estudios.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DATE_FORMAT(estudios.fecha_creacion,"%d/%m/%Y") AS 'fecha_creacion'
+estudios.id ' at line 2 - sql: SELECT
+,DATE_FORMAT(estudios.fecha_creacion,"%d/%m/%Y") AS 'fecha_creacion'
+estudios.id AS 'id_estudio',
+estudios.id_estado,
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.id AS 'id_equino'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+INNER JOIN problemas ON problemas.id = evoluciones.id_problema
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/07/14 15:02:47 - 26586 - ajx.list.estudios.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.estudios_tipo' doesn't exist - sql: SELECT
+DATE_FORMAT(estudios.fecha_creacion,"%d/%m/%Y") AS 'fecha_creacion',
+estudios.id AS 'id_estudio',
+estudios.id_estado,
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.id AS 'id_equino'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN problemas ON problemas.id_estudio = estudios.id
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/07/14 15:02:47 - 26586 - ajx.list.estudios.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.estudios_tipo' doesn't exist - sql: SELECT
+DATE_FORMAT(estudios.fecha_creacion,"%d/%m/%Y") AS 'fecha_creacion',
+estudios.id AS 'id_estudio',
+estudios.id_estado,
+estados.estado,
+estudios_tipo.tipo AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.id AS 'id_equino'
+FROM estudios
+INNER JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+INNER JOIN estados ON estados.id = estudios.id_estado
+INNER JOIN evoluciones ON evoluciones.id_estudio = estudios.id
+INNER JOIN problemas ON problemas.id = evoluciones.id_problema
+INNER JOIN equinos ON equinos.id = problemas.id_equino
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+WHERE estudios.id_estado = 4
+2014/07/22 21:25:29 - 6239 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'estudios.fechaSistema' in 'field list' - sql: SELECT
+DATE_FORMAT(estudios.fechaSistema,"%d/%m/%Y") AS 'fecha_creacion',
+estudios.idEstudio AS 'id_estudio',
+estudios.activo AS 'estudio_activo',
+codEstudios.descripcion AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.idEquino AS 'id_equino'
+FROM estudios
+INNER JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+INNER JOIN evoluciones ON evoluciones.idEvolucion = estudios.idEvolucion
+INNER JOIN problemas ON problemas.idProblema = evoluciones.idProblema
+INNER JOIN equinos ON equinos.idEquino = problemas.idEquino
+LEFT JOIN archivos ON archivos.idEstudio = estudios.idEstudio
+WHERE estudios.activo = 0
+AND equinos.activo = 1
+2014/07/22 21:25:38 - 7123 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'estudios.fechaSistema' in 'field list' - sql: SELECT
+DATE_FORMAT(estudios.fechaSistema,"%d/%m/%Y") AS 'fecha_creacion',
+estudios.idEstudio AS 'id_estudio',
+estudios.activo AS 'estudio_activo',
+codEstudios.descripcion AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.idEquino AS 'id_equino'
+FROM estudios
+INNER JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+INNER JOIN evoluciones ON evoluciones.idEvolucion = estudios.idEvolucion
+INNER JOIN problemas ON problemas.idProblema = evoluciones.idProblema
+INNER JOIN equinos ON equinos.idEquino = problemas.idEquino
+LEFT JOIN archivos ON archivos.idEstudio = estudios.idEstudio
+WHERE estudios.activo = 0
+AND equinos.activo = 1
+2014/07/22 21:25:44 - 2821 - ajx.list.estudios.php - SQL: ERROR: 1054 - Unknown column 'estudios.fechaSistema' in 'field list' - sql: SELECT
+DATE_FORMAT(estudios.fechaSistema,"%d/%m/%Y") AS 'fecha_creacion',
+estudios.idEstudio AS 'id_estudio',
+estudios.activo AS 'estudio_activo',
+codEstudios.descripcion AS 'estudio_tipo',
+equinos.nombre AS 'equino_nombre',
+equinos.idEquino AS 'id_equino'
+FROM estudios
+INNER JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+INNER JOIN evoluciones ON evoluciones.idEvolucion = estudios.idEvolucion
+INNER JOIN problemas ON problemas.idProblema = evoluciones.idProblema
+INNER JOIN equinos ON equinos.idEquino = problemas.idEquino
+LEFT JOIN archivos ON archivos.idEstudio = estudios.idEstudio
+WHERE estudios.activo = 0
+AND equinos.activo = 1

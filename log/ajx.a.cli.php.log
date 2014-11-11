@@ -1,0 +1,2 @@
+2014/02/14 15:50:40 - 25281 - ajx.a.cli.php - SQL: ERROR: 1048 - Column 'nombre' cannot be null - sql: INSERT INTO clientes (fecha, nombre, direccion, id_provincia, id_localidad, telefono, celular, email) VALUES (NOW(), NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+2014/02/14 16:01:01 - 13346 - ajx.a.cli.php - SQL: ERROR: 1048 - Column 'id_provincia' cannot be null - sql: INSERT INTO clientes (fecha, nombre, direccion, id_provincia, id_localidad, telefono, celular, email) VALUES (NOW(), 'David', 'mexico 12', NULL, NULL, '1234567890', '1234567890', 'prueba@gmail.com')

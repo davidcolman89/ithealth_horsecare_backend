@@ -1,0 +1,2 @@
+2014/06/01 12:07:44 - 10861 - ajx.cmb.practicas.php - SQL: ERROR: 1054 - Unknown column 'practicas.practicas' in 'order clause' - sql: SELECT practicas.id AS 'v',practicas.practica AS 't' FROM practicas WHERE 1=1 ORDER BY practicas.practicas ASC
+2014/06/01 12:09:31 - 10861 - ajx.cmb.practicas.php - SQL: ERROR: 1054 - Unknown column 'practicas.practicas' in 'order clause' - sql: SELECT practicas.id AS 'v',practicas.practica AS 't' FROM practicas WHERE 1=1 ORDER BY practicas.practicas ASC

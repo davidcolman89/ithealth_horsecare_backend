@@ -1,0 +1,27 @@
+2014/07/30 17:57:29 - 2396 - Array
+(
+)
+2014/07/30 18:00:44 - 18282 - Array
+(
+)
+Array
+(
+    [a] => 1
+)
+2014/07/30 18:10:16 - 2396 - Array
+(
+    [file] => Array
+        (
+            [name] => 209
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpya8jO1
+            [error] => 0
+            [size] => 111699
+        )
+
+)
+Array
+(
+    [value1] => test
+    [value2] => param
+)

@@ -1,0 +1,1 @@
+2014/02/20 13:47:09 - 17100 - ajx.alta.equino_gen.php - SQL: ERROR: 1048 - Column 'nombre' cannot be null - sql: INSERT INTO equinos_genetica (fecha, nombre, obs) VALUES (NOW(), NULL, NULL)

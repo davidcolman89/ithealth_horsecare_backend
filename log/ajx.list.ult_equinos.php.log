@@ -1,0 +1,38 @@
+2014/07/14 00:49:55 - 9407 - ajx.list.ult_equinos.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+			equinos.id AS 'equino_id'
+		,	equinos.nombre AS 'equino_nombre'
+		,	equinos.obs AS 'equino_obs'
+		, equinos.id_duenio
+		, clientes.nombre AS 'duenio_nombre'
+		, '' AS 'estado'
+		, '' AS 'acciones'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+WHERE 1=1
+ORDER BY equinos.id DESC
+LIMIT 3
+2014/07/14 01:58:28 - 22021 - ajx.list.ult_equinos.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+			equinos.id AS 'equino_id'
+		,	equinos.nombre AS 'equino_nombre'
+		,	equinos.obs AS 'equino_obs'
+		, equinos.id_duenio
+		, clientes.nombre AS 'duenio_nombre'
+		, '' AS 'estado'
+		, '' AS 'acciones'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+WHERE 1=1
+ORDER BY equinos.id DESC
+LIMIT 3
+2014/07/14 02:00:09 - 15197 - ajx.list.ult_equinos.php - SQL: ERROR: 1054 - Unknown column 'problemas.id' in 'field list' - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 1
+        AND problemas.id_estado = 3
+2014/07/14 02:02:58 - 22021 - ajx.list.ult_equinos.php - SQL: ERROR: 1054 - Unknown column 'problemas.id' in 'field list' - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 1
+        AND problemas.id_estado = 3
+2014/07/14 02:03:03 - 16583 - ajx.list.ult_equinos.php - SQL: ERROR: 1054 - Unknown column 'problemas.id' in 'field list' - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 1
+        AND problemas.id_estado = 3

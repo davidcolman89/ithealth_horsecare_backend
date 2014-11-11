@@ -1,0 +1,2 @@
+2014/02/17 17:06:48 - 6260 - ajx.cmb.prov.php - SQL: ERROR: 1054 - Unknown column 'provincias.provincia' in 'field list' - sql: SELECT provincias.id AS 'v',provincias.provincia AS 't' FROM provincias WHERE 1=1 ORDER BY provincias.provincia ASC
+2014/02/17 19:43:01 - 24435 - ajx.cmb.prov.php - SQL: ERROR: 1054 - Unknown column 'provincias.provincia' in 'field list' - sql: SELECT provincias.id AS 'v',provincias.provincia AS 't' FROM provincias WHERE 1=1 ORDER BY provincias.provincia ASC

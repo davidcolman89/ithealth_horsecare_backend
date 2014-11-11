@@ -1,0 +1,2 @@
+2014/02/20 15:12:23 - 18952 - ajx.cmb.evolucion_lugares.php - SQL: ERROR: 1054 - Unknown column 'evolucion_lugares.dolencia' in 'field list' - sql: SELECT evolucion_lugares.id AS 'v',evolucion_lugares.dolencia AS 't' FROM evolucion_lugares WHERE 1=1 ORDER BY evolucion_lugares.dolencia ASC
+2014/02/24 01:56:00 - 15804 - ajx.cmb.evolucion_lugares.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.evolucion_lugares' doesn't exist - sql: SELECT evolucion_lugares.id AS 'v',evolucion_lugares.lugar AS 't' FROM evolucion_lugares WHERE 1=1 ORDER BY evolucion_lugares.lugar ASC

@@ -1,0 +1,1 @@
+2014/07/14 00:51:19 - 16583 - ajx.cmb.cli.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT clientes.id AS 'v',clientes.nombre AS 't' FROM clientes WHERE 1=1 ORDER BY clientes.nombre ASC

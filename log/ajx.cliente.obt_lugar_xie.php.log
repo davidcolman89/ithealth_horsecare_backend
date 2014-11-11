@@ -1,0 +1,55 @@
+2014/06/02 12:26:26 - 30612 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 5 - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 
+LIMIT 1
+2014/06/02 12:26:36 - 32741 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 5 - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 
+LIMIT 1
+2014/06/02 12:27:05 - 31579 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 5 - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 
+LIMIT 1
+2014/07/14 03:33:19 - 8282 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 03:36:33 - 32214 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 03:47:22 - 22021 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 03:48:08 - 22992 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 03:48:31 - 2337 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 03:51:37 - 6111 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 12:17:35 - 22615 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1
+2014/07/14 12:27:55 - 9763 - ajx.cliente.obt_lugar_xie.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT  clientes.id_lugar
+FROM    equinos
+        INNER JOIN clientes ON equinos.id_duenio = clientes.id
+WHERE   equinos.id = 1
+LIMIT 1

@@ -1,0 +1,12 @@
+2014/02/24 23:40:41 - 2220 - ajx.infodb.mod.equino.php - SQL: ERROR: 1054 - Unknown column 'equino.id_duenio' in 'field list' - sql: SELECT equinos.nombre
+, equino.id_duenio
+, equino.id_sexo
+, equino.nacimiento
+, equino.obs
+, equino.id_padrillo
+, equino.id_madre
+, equino.id_abuelo	
+FROM equinos
+WHERE equinos.id = 5
+ORDER BY equinos.nombre ASC
+LIMIT 1

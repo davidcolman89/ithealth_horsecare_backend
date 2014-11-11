@@ -1,0 +1,32 @@
+2014/07/01 01:12:20 - 5581 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.localidades' doesn't exist - sql: SELECT localidades.id AS 'v',localidades.localidad AS 't' 
+FROM localidades 
+WHERE localidades.id_provincia = '3' 
+ORDER BY localidades.localidad ASC
+2014/07/01 01:12:24 - 27687 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.localidades' doesn't exist - sql: SELECT localidades.id AS 'v',localidades.localidad AS 't' 
+FROM localidades 
+WHERE localidades.id_provincia = '2' 
+ORDER BY localidades.localidad ASC
+2014/07/01 02:28:47 - 17710 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.localidades' doesn't exist - sql: SELECT localidades.id AS 'v',localidades.localidad AS 't' 
+FROM localidades 
+WHERE localidades.id_provincia = '1' 
+ORDER BY localidades.localidad ASC
+2014/07/01 02:34:11 - 1355 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.localidades' doesn't exist - sql: SELECT localidades.id AS 'v',localidades.localidad AS 't' 
+FROM localidades 
+WHERE localidades.id_provincia = '3' 
+ORDER BY localidades.localidad ASC
+2014/07/14 00:57:35 - 20268 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dir_localidades' doesn't exist - sql: SELECT dir_localidades.id AS 'v',dir_localidades.localidad AS 't'
+FROM dir_localidades
+WHERE dir_localidades.id_provincia = '1'
+ORDER BY dir_localidades.localidad ASC
+2014/07/14 00:57:37 - 22031 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dir_localidades' doesn't exist - sql: SELECT dir_localidades.id AS 'v',dir_localidades.localidad AS 't'
+FROM dir_localidades
+WHERE dir_localidades.id_provincia = '2'
+ORDER BY dir_localidades.localidad ASC
+2014/07/14 00:57:39 - 15199 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dir_localidades' doesn't exist - sql: SELECT dir_localidades.id AS 'v',dir_localidades.localidad AS 't'
+FROM dir_localidades
+WHERE dir_localidades.id_provincia = ''
+ORDER BY dir_localidades.localidad ASC
+2014/07/14 01:00:02 - 9407 - ajx.cmb.loc.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dir_localidades' doesn't exist - sql: SELECT dir_localidades.id AS 'v',dir_localidades.localidad AS 't'
+FROM dir_localidades
+WHERE dir_localidades.id_provincia = '2'
+ORDER BY dir_localidades.localidad ASC

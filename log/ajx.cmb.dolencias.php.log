@@ -1,0 +1,1 @@
+2014/02/20 15:06:24 - 13501 - ajx.cmb.dolencias.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.dolecias' doesn't exist - sql: SELECT dolecias.id AS 'v',dolecias.dolencia AS 't' FROM dolecias WHERE 1=1 ORDER BY dolecias.dolencia ASC

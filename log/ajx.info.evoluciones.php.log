@@ -1,0 +1,594 @@
+2014/02/25 10:44:28 - 9069 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:44:30 - 14387 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:44:30 - 11623 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:44:30 - 10863 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:44:49 - 14387 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:44:53 - 14387 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/02/25 10:49:25 - 20035 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY evoluciones.fecha DESC' at line 11 - sql: SELECT
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+WHERE evoluciones.id_problema = 
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:11 - 25843 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 41
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:12 - 1584 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 40
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:16 - 13364 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 33
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:18 - 6138 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 24
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:20 - 6135 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 25
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:21 - 6149 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 26
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:27 - 6138 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 29
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:37:59 - 6135 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 34
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:40:13 - 12919 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 41
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:40:17 - 6149 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 41
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:41:56 - 6149 - ajx.info.evoluciones.php - SQL: ERROR: 1054 - Unknown column 'problemas.id_medicacion' in 'on clause' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+,lugares.lugar AS 'evol_lugar'
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado'
+,evoluciones.id_problema AS 'evol_prob_id'
+
+,estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 41
+ORDER BY evoluciones.fecha DESC
+2014/06/16 17:43:20 - 30089 - ajx.info.evoluciones.php - SQL: ERROR: 1054 - Unknown column 'problemas.id_medicacion' in 'on clause' - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,evoluciones.id_problema AS 'evol_prob_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+
+,lugares.lugar AS 'evol_lugar'
+
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado',estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE evoluciones.id_problema = 41
+ORDER BY evoluciones.fecha DESC
+2014/07/14 15:33:31 - 20555 - ajx.info.evoluciones.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.estudios_tipo' doesn't exist - sql: SELECT
+
+evoluciones.id AS 'evol_id'
+,evoluciones.id_problema AS 'evol_prob_id'
+,DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha'
+,evoluciones.obs AS 'evol_obs'
+
+,lugares.lugar AS 'evol_lugar'
+
+,estados.estado AS 'evol_resultado'
+,estados.id AS 'evol_id_estado',estudios.id AS 'evol_id_estudio'
+,estudios.id_estado AS 'evol_id_estado_estudio'
+,estudios.doctor_nombre AS 'evol_estudio_doctor_nombre'
+,estudios.obs AS 'evol_estudio_obs'
+,estudios_tipo.tipo AS 'evol_estudio_tipo'
+,archivos.nombre AS 'evol_archivo_nombre'
+
+,medicaciones.medicacion AS 'evol_medicacion'
+,practicas.practica AS 'evol_practica'
+
+FROM	evoluciones
+INNER JOIN lugares ON lugares.id = evoluciones.id_lugar
+INNER JOIN estados ON estados.id = evoluciones.id_estado
+
+LEFT JOIN estudios ON estudios.id = evoluciones.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = evoluciones.id_medicacion
+LEFT JOIN practicas ON practicas.id = evoluciones.id_practica
+
+WHERE evoluciones.id_problema = 1
+ORDER BY evoluciones.fecha DESC
+2014/07/22 16:55:36 - 30387 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.idProblema
+FROM evoluciones
+WHERE evoluciones.idProblema = 9329
+ORDER BY evoluc' at line 3 - sql: SELECT
+evoluciones.idEvolucion
+evoluciones.idProblema
+FROM	evoluciones
+WHERE evoluciones.idProblema = 9329
+ORDER BY evoluciones.fecha DESC
+2014/07/22 16:56:19 - 30573 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.idProblema
+FROM evoluciones
+WHERE evoluciones.idProblema = 9329
+ORDER BY evoluc' at line 3 - sql: SELECT
+evoluciones.idEvolucion
+evoluciones.idProblema
+FROM	evoluciones
+WHERE evoluciones.idProblema = 9329
+ORDER BY evoluciones.fecha DESC
+2014/08/01 18:07:14 - 13108 - ajx.info.evoluciones.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM evoluciones
+        LEFT JOIN lugares ON lugares.idLugar = evoluciones.idLu' at line 8 - sql: SELECT
+evoluciones.idEvolucion AS 'evol_id',
+evoluciones.idProblema AS 'evol_prob_id',
+DATE_FORMAT(evoluciones.fecha,"%d/%m/%Y") AS 'evol_fecha',
+evoluciones.observacion AS 'evol_obs',
+lugares.nombre AS 'evol_lugar',
+
+FROM	evoluciones
+        LEFT JOIN lugares ON lugares.idLugar = evoluciones.idLugar
+
+WHERE evoluciones.idEvolucion = 4926
+ORDER BY evoluciones.fecha DESC
+2014/08/01 18:08:07 - 16182 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT  estudios.idEstudio,
+        estudios.activo AS 'evol_estudio_activo',
+        estudios.doctor AS 'evol_estudio_doctor_nombre',
+        estudios.observacion AS 'evol_estudio_obs',
+        codEstudios.descripcion AS 'evol_estudio_tipo'
+FROM    estudios
+        LEFT JOIN estudios ON estudios.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+        LEFT JOIN archivos ON archivos.idEstudio = estudios.IdEstudio
+WHERE   estudios.idEvolucion = 4926
+2014/08/01 18:08:07 - 16182 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'medicaciones' - sql: SELECT  codMedicaciones.nombrecom AS 'evol_medicacion'
+FROM    medicaciones
+        LEFT JOIN medicaciones ON medicaciones.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codMedicaciones ON codMedicaciones.idCodMedicacion = medicaciones.idCodMedicacion
+WHERE   medicaciones.idEvolucion = 4926
+2014/08/01 18:17:56 - 28253 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT  estudios.idEstudio,
+        estudios.activo,
+        estudios.doctor,
+        estudios.observacion,
+        codEstudios.descripcion
+FROM    estudios
+        LEFT JOIN estudios ON estudios.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+        LEFT JOIN archivos ON archivos.idEstudio = estudios.IdEstudio
+WHERE   estudios.idEvolucion = 4926
+2014/08/01 18:17:56 - 28253 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'medicaciones' - sql: SELECT  codMedicaciones.nombrecom AS 'descripcion'
+FROM    medicaciones
+        LEFT JOIN medicaciones ON medicaciones.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codMedicaciones ON codMedicaciones.idCodMedicacion = medicaciones.idCodMedicacion
+WHERE   medicaciones.idEvolucion = 4926
+2014/08/01 18:28:34 - 19378 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT  estudios.idEstudio,
+        estudios.activo,
+        estudios.doctor,
+        estudios.observacion,
+        codEstudios.descripcion
+FROM    estudios
+        LEFT JOIN estudios ON estudios.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+        LEFT JOIN archivos ON archivos.idEstudio = estudios.IdEstudio
+WHERE   estudios.idEvolucion = 4926
+2014/08/01 18:28:34 - 19378 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'medicaciones' - sql: SELECT  codMedicaciones.nombrecom AS 'descripcion'
+FROM    medicaciones
+        LEFT JOIN medicaciones ON medicaciones.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codMedicaciones ON codMedicaciones.idCodMedicacion = medicaciones.idCodMedicacion
+WHERE   medicaciones.idEvolucion = 4926
+2014/08/01 18:33:01 - 21233 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT  estudios.idEstudio,
+        estudios.activo,
+        estudios.doctor,
+        estudios.observacion,
+        codEstudios.descripcion
+FROM    estudios
+        LEFT JOIN estudios ON estudios.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+        LEFT JOIN archivos ON archivos.idEstudio = estudios.IdEstudio
+WHERE   estudios.idEvolucion = 8210
+2014/08/01 18:33:01 - 21233 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'medicaciones' - sql: SELECT  codMedicaciones.nombrecom AS 'descripcion'
+FROM    medicaciones
+        LEFT JOIN medicaciones ON medicaciones.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codMedicaciones ON codMedicaciones.idCodMedicacion = medicaciones.idCodMedicacion
+WHERE   medicaciones.idEvolucion = 8210
+2014/08/01 18:33:09 - 21221 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'estudios' - sql: SELECT  estudios.idEstudio,
+        estudios.activo,
+        estudios.doctor,
+        estudios.observacion,
+        codEstudios.descripcion
+FROM    estudios
+        LEFT JOIN estudios ON estudios.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codEstudios ON codEstudios.idCodEstudio = estudios.idCodEstudio
+        LEFT JOIN archivos ON archivos.idEstudio = estudios.IdEstudio
+WHERE   estudios.idEvolucion = 8210
+2014/08/01 18:33:09 - 21221 - ajx.info.evoluciones.php - SQL: ERROR: 1066 - Not unique table/alias: 'medicaciones' - sql: SELECT  codMedicaciones.nombrecom AS 'descripcion'
+FROM    medicaciones
+        LEFT JOIN medicaciones ON medicaciones.idEvolucion = evoluciones.idEvolucion
+        LEFT JOIN codMedicaciones ON codMedicaciones.idCodMedicacion = medicaciones.idCodMedicacion
+WHERE   medicaciones.idEvolucion = 8210

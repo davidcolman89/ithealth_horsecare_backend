@@ -1,0 +1,40 @@
+2014/07/14 00:50:02 - 32214 - ajx.list.equinos.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+			equinos.id AS 'equino_id'
+		,	equinos.nombre AS 'equino_nombre'
+		,	equinos.obs AS 'equino_obs'
+		, equinos.id_duenio
+		, clientes.nombre AS 'duenio_nombre'
+		, '' AS 'estado'
+		, '' AS 'acciones' 
+FROM equinos 
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+WHERE 1=1 
+ORDER BY equinos.id DESC
+2014/07/14 02:00:06 - 22992 - ajx.list.equinos.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+			equinos.id AS 'equino_id'
+		,	equinos.nombre AS 'equino_nombre'
+		,	equinos.obs AS 'equino_obs'
+		, equinos.id_duenio
+		, clientes.nombre AS 'duenio_nombre'
+		, '' AS 'estado'
+		, '' AS 'acciones' 
+FROM equinos 
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+WHERE 1=1 
+ORDER BY equinos.id DESC
+2014/07/14 02:00:16 - 6111 - ajx.list.equinos.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+			equinos.id AS 'equino_id'
+		,	equinos.nombre AS 'equino_nombre'
+		,	equinos.obs AS 'equino_obs'
+		, equinos.id_duenio
+		, clientes.nombre AS 'duenio_nombre'
+		, '' AS 'estado'
+		, '' AS 'acciones' 
+FROM equinos 
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+WHERE 1=1 
+ORDER BY equinos.id DESC
+2014/07/14 02:02:46 - 12901 - ajx.list.equinos.php - SQL: ERROR: 1054 - Unknown column 'problemas.id' in 'field list' - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 1
+        AND problemas.id_estado = 3

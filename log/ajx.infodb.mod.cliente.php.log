@@ -1,0 +1,45 @@
+2014/07/14 02:11:48 - 28257 - ajx.infodb.mod.cliente.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY clientes.nombre ASC
+LIMIT 1' at line 13 - sql: SELECT 
+clientes.id
+,clientes.nombre
+,clientes.direccion
+,clientes.id_provincia
+,clientes.id_localidad
+,clientes.telefono
+,clientes.celular
+,clientes.email
+,clientes.id_lugar
+FROM clientes
+WHERE clientes.id = 
+ORDER BY clientes.nombre ASC
+LIMIT 1
+2014/07/14 02:11:54 - 2337 - ajx.infodb.mod.cliente.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY clientes.nombre ASC
+LIMIT 1' at line 13 - sql: SELECT 
+clientes.id
+,clientes.nombre
+,clientes.direccion
+,clientes.id_provincia
+,clientes.id_localidad
+,clientes.telefono
+,clientes.celular
+,clientes.email
+,clientes.id_lugar
+FROM clientes
+WHERE clientes.id = 
+ORDER BY clientes.nombre ASC
+LIMIT 1
+2014/07/14 02:13:49 - 18959 - ajx.infodb.mod.cliente.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY duenios.nombre ASC
+LIMIT 1' at line 13 - sql: SELECT 
+duenios.idDuenio AS 'id'
+,duenios.nombre
+,duenios.direccion
+,duenios.idProvincia AS 'id_provincia'
+,duenios.idLocalidad AS 'id_localidad'
+,duenios.telefono
+,duenios.celular
+,duenios.email
+,duenios.idLugar AS 'id_lugar'
+FROM duenios
+WHERE duenios.idDuenio = 
+ORDER BY duenios.nombre ASC
+LIMIT 1

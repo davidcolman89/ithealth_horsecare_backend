@@ -1,0 +1,2980 @@
+2014/02/24 00:47:45 - 15742 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 00:47:45 - 15742 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.id DESC
+
+LIMIT 2' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,evolucion_lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM equinos
+INNER JOIN equino_problema ON equino_problema.id_equino = equinos.id
+INNER JOIN problemas ON problemas.id = equino_problema.id_problema
+INNER JOIN evolucion_lugares ON evolucion_lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_dolencia_resultado
+
+WHERE equinos.id = 
+
+ORDER BY problemas.id DESC
+
+LIMIT 2
+2014/02/24 00:52:21 - 15742 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 00:52:21 - 15742 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.id DESC
+
+LIMIT 2' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,evolucion_lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM equinos
+INNER JOIN equino_problema ON equino_problema.id_equino = equinos.id
+INNER JOIN problemas ON problemas.id = equino_problema.id_problema
+INNER JOIN evolucion_lugares ON evolucion_lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_dolencia_resultado
+
+WHERE equinos.id = 
+
+ORDER BY problemas.id DESC
+
+LIMIT 2
+2014/02/24 00:58:17 - 20031 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 00:58:17 - 20031 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.id DESC
+
+LIMIT 2' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,evolucion_lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM equinos
+INNER JOIN equino_problema ON equino_problema.id_equino = equinos.id
+INNER JOIN problemas ON problemas.id = equino_problema.id_problema
+INNER JOIN evolucion_lugares ON evolucion_lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_dolencia_resultado
+
+WHERE equinos.id = 
+
+ORDER BY problemas.id DESC
+
+LIMIT 2
+2014/02/24 00:58:29 - 16968 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 00:58:29 - 16968 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.id DESC
+
+LIMIT 2' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,evolucion_lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM equinos
+INNER JOIN equino_problema ON equino_problema.id_equino = equinos.id
+INNER JOIN problemas ON problemas.id = equino_problema.id_problema
+INNER JOIN evolucion_lugares ON evolucion_lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_dolencia_resultado
+
+WHERE equinos.id = 
+
+ORDER BY problemas.id DESC
+
+LIMIT 2
+2014/02/24 00:59:41 - 27674 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 00:59:41 - 27674 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.id DESC
+
+LIMIT 2' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,evolucion_lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM equinos
+INNER JOIN equino_problema ON equino_problema.id_equino = equinos.id
+INNER JOIN problemas ON problemas.id = equino_problema.id_problema
+INNER JOIN evolucion_lugares ON evolucion_lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_dolencia_resultado
+
+WHERE equinos.id = 
+
+ORDER BY problemas.id DESC
+
+LIMIT 2
+2014/02/24 02:37:38 - 8008 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 02:37:38 - 8008 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/02/24 02:37:41 - 15928 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 02:37:41 - 15928 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/02/24 02:37:43 - 15748 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 02:37:43 - 15748 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/02/24 02:38:20 - 24591 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 02:38:20 - 24591 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/02/24 03:54:04 - 16071 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 03:54:04 - 16071 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/02/24 03:54:07 - 15043 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/24 03:54:07 - 15043 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/02/25 01:01:14 - 19746 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/02/25 01:01:14 - 19746 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/03/04 14:12:46 - 11051 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/03/04 14:12:46 - 11051 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:20:43 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:20:43 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:20:49 - 27115 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:20:49 - 27115 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:20:54 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:20:54 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/04/18 00:25:23 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:25:23 - 27105 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:25:27 - 25993 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:25:27 - 25993 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:25:28 - 27115 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:25:28 - 27115 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/04/18 00:25:35 - 31251 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:25:35 - 31251 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 00:25:38 - 22669 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 00:25:38 - 22669 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC' at line 16 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+2014/04/18 03:40:28 - 6733 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 03:40:28 - 6733 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 17 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/04/18 03:40:44 - 10276 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/04/18 03:40:44 - 10276 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC
+
+LIMIT 2' at line 17 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC
+
+LIMIT 2
+2014/06/02 12:26:29 - 28609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/02 12:26:29 - 28609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 19 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/06/02 12:26:29 - 28609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/02 12:27:08 - 31577 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/02 12:27:08 - 31577 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 19 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/06/02 12:27:08 - 31577 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 12:53:03 - 1782 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 12:53:03 - 1782 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/06/03 12:53:03 - 1782 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 17:24:51 - 16323 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 17:24:51 - 16323 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/06/03 17:24:51 - 16323 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 17:24:57 - 16357 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 17:24:57 - 16357 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/03 17:24:57 - 16357 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 18:49:39 - 3062 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 18:49:39 - 3062 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/03 18:49:39 - 3062 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 18:49:51 - 7688 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 18:49:51 - 7688 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/03 18:49:51 - 7688 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/03 18:49:52 - 7790 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/03 18:49:52 - 7790 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 20 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+INNER JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/03 18:49:52 - 7790 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/15 03:47:01 - 15568 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/15 03:47:02 - 15568 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 23 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/06/15 03:47:02 - 15568 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/15 06:05:30 - 26594 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/15 06:05:31 - 26594 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 23 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/15 06:05:31 - 26594 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/15 07:19:17 - 29440 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/15 07:19:17 - 29440 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 23 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/15 07:19:17 - 29440 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/15 07:19:17 - 2676 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/15 07:19:17 - 2676 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 23 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/15 07:19:17 - 2676 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/15 07:19:18 - 26587 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/15 07:19:18 - 26587 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 23 - sql: SELECT
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+,estados.estado AS 'prob_estado'
+,estados.id AS 'prob_id_estado'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estados_estudios.estado AS 'prob_estado_estudio'
+,estudios.id AS 'prob_id_estudio'
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estados AS estados_estudios ON estados_estudios.id = estudios.id_estado
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/15 07:19:18 - 26587 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/16 19:18:50 - 30081 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/16 19:18:50 - 30081 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 35 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/16 19:18:50 - 30081 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 14:35:43 - 20710 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 14:35:43 - 20710 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 14:35:43 - 20710 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:10 - 19258 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:10 - 19258 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:10 - 19258 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:23 - 26960 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:23 - 26960 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:23 - 26960 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:24 - 25572 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:24 - 25572 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:24 - 25572 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:45 - 22388 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:45 - 22388 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:45 - 22388 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:46 - 10946 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:46 - 10946 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:46 - 10946 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:21:50 - 32295 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:21:50 - 32295 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:21:50 - 32295 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:22:13 - 22430 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:22:13 - 22430 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:22:13 - 22430 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:57:37 - 30157 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:57:37 - 30157 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:57:37 - 30157 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/06/18 16:58:52 - 32609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+LIMIT 1' at line 18 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+INNER JOIN sexos ON sexos.id = equinos.id_sexo
+WHERE equinos.id = 
+ORDER BY equinos.nombre ASC
+LIMIT 1
+2014/06/18 16:58:52 - 32609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC' at line 37 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+2014/06/18 16:58:52 - 32609 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/07/09 03:03:31 - 20150 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 21 - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+LEFT JOIN sexos ON sexos.id = equinos.id_sexo
+
+WHERE equinos.id = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/09 03:03:31 - 20150 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2' at line 39 - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios.doctor_nombre AS 'prob_estudio_doctor_nombre'
+,estudios.obs AS 'prob_estudio_obs'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/07/09 03:03:31 - 20150 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.id_estado = 3' at line 4 - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 
+        AND problemas.id_estado = 3
+2014/07/14 02:03:00 - 22032 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+LEFT JOIN sexos ON sexos.id = equinos.id_sexo
+
+WHERE equinos.id = 1
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/14 02:03:00 - 22032 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dolencias' doesn't exist - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios.doctor_nombre AS 'prob_estudio_doctor_nombre'
+,estudios.obs AS 'prob_estudio_obs'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 1
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/07/14 02:03:00 - 22032 - ajx.info.equino.php - SQL: ERROR: 1054 - Unknown column 'problemas.id' in 'field list' - sql: SELECT  COUNT(problemas.id) AS 'cant'
+FROM    problemas
+WHERE   problemas.id_equino = 1
+        AND problemas.id_estado = 3
+2014/07/14 02:11:21 - 32214 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+LEFT JOIN sexos ON sexos.id = equinos.id_sexo
+
+WHERE equinos.id = 1
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/14 02:11:21 - 32214 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dolencias' doesn't exist - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios.doctor_nombre AS 'prob_estudio_doctor_nombre'
+,estudios.obs AS 'prob_estudio_obs'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 1
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/07/14 02:34:24 - 17329 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT
+equinos.id AS 'equino_id'
+,equinos.nombre AS 'equino_nombre'
+,DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac'
+,equinos.obs AS 'equino_obs'
+,clientes.nombre AS 'duenio_nombre'
+,eq_gen_1.nombre AS 'equino_padrillo'
+,eq_gen_2.nombre AS 'equino_madre'
+,eq_gen_3.nombre AS 'equino_abuelo'
+,sexos.sexo AS 'equino_sexo'
+
+FROM equinos
+INNER JOIN clientes ON clientes.id = equinos.id_duenio
+LEFT JOIN equinos_genetica AS eq_gen_1 ON eq_gen_1.id = equinos.id_padrillo
+LEFT JOIN equinos_genetica AS eq_gen_2 ON eq_gen_2.id = equinos.id_madre
+LEFT JOIN equinos_genetica AS eq_gen_3 ON eq_gen_3.id = equinos.id_abuelo
+LEFT JOIN sexos ON sexos.id = equinos.id_sexo
+
+WHERE equinos.id = 1
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/14 02:34:24 - 17329 - ajx.info.equino.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.dolencias' doesn't exist - sql: SELECT
+
+problemas.id_equino AS 'equino_id'
+,problemas.id AS 'prob_id'
+,DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec'
+
+,lugares.lugar AS 'prob_lugar'
+,dolencias.dolencia AS 'prob_dolencia'
+
+,estados.id AS 'prob_id_estado'
+,estados.estado AS 'prob_estado'
+
+,estudios.id AS 'prob_id_estudio'
+,estudios.id_estado AS 'prob_id_estado_estudio'
+,estudios.doctor_nombre AS 'prob_estudio_doctor_nombre'
+,estudios.obs AS 'prob_estudio_obs'
+,estudios_tipo.tipo AS 'prob_estudio_tipo'
+,archivos.nombre AS 'prob_archivo_nombre'
+
+,medicaciones.medicacion AS 'prob_medicacion'
+,practicas.practica AS 'prob_practica'
+
+FROM problemas
+
+INNER JOIN lugares ON lugares.id = problemas.id_lugar
+INNER JOIN dolencias ON dolencias.id = problemas.id_dolencia
+
+INNER JOIN estados ON estados.id = problemas.id_estado
+
+LEFT JOIN estudios ON estudios.id = problemas.id_estudio
+LEFT JOIN estudios_tipo ON estudios_tipo.id = estudios.id_estudio_tipo
+LEFT JOIN archivos ON archivos.id = estudios.id_archivo
+
+LEFT JOIN medicaciones ON medicaciones.id = problemas.id_medicacion
+LEFT JOIN practicas ON practicas.id = problemas.id_practica
+
+WHERE problemas.id_equino = 1
+
+ORDER BY problemas.fecha DESC, problemas.id DESC
+
+LIMIT 2
+2014/07/14 03:13:26 - 6111 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 03:13:35 - 22992 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+2014/07/14 03:20:42 - 28257 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 03:48:03 - 18959 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 12:03:59 - 15416 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 15:02:36 - 4896 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 15:02:56 - 23639 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 15:03:31 - 7833 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+2014/07/14 15:12:31 - 8264 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 15:12:48 - 18380 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas' at line 7 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        DATE_FORMAT(problemas.fecha,"%d/%m/%Y") AS 'prob_fec',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado',
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 1
+ORDER BY problemas.fecha DESC, problemas.idProblema DESC
+LIMIT 2
+2014/07/14 18:45:35 - 18685 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/14 18:45:35 - 18685 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC
+LIMIT 2' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+LIMIT 2
+2014/07/14 18:45:35 - 18685 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/17 21:15:35 - 10766 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/17 21:15:35 - 10766 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC
+LIMIT 2' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+LIMIT 2
+2014/07/17 21:15:35 - 10766 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/17 21:15:38 - 31919 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/17 21:15:38 - 31919 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+2014/07/17 21:15:38 - 31919 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 20:58:20 - 10639 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 20:58:20 - 10639 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC
+LIMIT 2' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+LIMIT 2
+2014/07/22 20:58:20 - 10639 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 20:58:28 - 10640 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 20:58:28 - 10640 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+2014/07/22 20:58:28 - 10640 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 20:58:29 - 7259 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 20:58:29 - 7259 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+2014/07/22 20:58:29 - 7259 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 20:58:30 - 16563 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 20:58:30 - 16563 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+2014/07/22 20:58:30 - 16563 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 20:58:30 - 14143 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 20:58:30 - 14143 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+2014/07/22 20:58:30 - 14143 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 21:00:59 - 10648 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 21:00:59 - 10648 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC
+LIMIT 2' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+LIMIT 2
+2014/07/22 21:00:59 - 10648 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1
+2014/07/22 21:21:31 - 30681 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY equinos.nombre ASC
+
+LIMIT 1' at line 20 - sql: SELECT  equinos.idEquino AS 'equino_id',
+        equinos.nombre AS 'equino_nombre',
+        DATE_FORMAT(equinos.nacimiento,"%d/%m/%Y") AS 'equino_nac',
+        equinos.observacion AS 'equino_obs',
+        duenios.nombre AS 'duenio_nombre',
+        eq_gen_1.nombre AS 'equino_padrillo',
+        eq_gen_2.nombre AS 'equino_madre',
+        eq_gen_3.nombre AS 'equino_abuelo',
+        sexos.nombre AS 'equino_sexo',
+        equinos.activo AS 'equino_activo'
+FROM equinos
+INNER JOIN duenios ON duenios.idDuenio = equinos.idDuenio
+LEFT JOIN parientes AS eq_gen_1 ON eq_gen_1.idPariente = equinos.idPadrillo
+LEFT JOIN parientes AS eq_gen_2 ON eq_gen_2.idPariente = equinos.idMadre
+LEFT JOIN parientes AS eq_gen_3 ON eq_gen_3.idPariente = equinos.idAbuelo
+LEFT JOIN sexos ON sexos.idSexo = equinos.idSexo
+
+WHERE equinos.idEquino = 
+
+ORDER BY equinos.nombre ASC
+
+LIMIT 1
+2014/07/22 21:21:31 - 30681 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY problemas.idProblema DESC
+LIMIT 2' at line 10 - sql: SELECT  problemas.idEquino AS 'equino_id',
+        problemas.idProblema AS 'prob_id',
+        codProblemas.descripcion AS 'prob_dolencia',
+        estados.idEstado AS 'prob_id_estado',
+        estados.nombre AS 'prob_estado'
+FROM problemas
+INNER JOIN codProblemas ON codProblemas.idCodProblema = problemas.idCodProblema
+INNER JOIN estados ON estados.idEstado = problemas.idEstado
+WHERE problemas.idEquino = 
+ORDER BY problemas.idProblema DESC
+LIMIT 2
+2014/07/22 21:21:31 - 30681 - ajx.info.equino.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND problemas.idEstado = 3
+LIMIT 1' at line 4 - sql: SELECT  COUNT(problemas.idProblema) AS 'cant'
+FROM    problemas
+WHERE   problemas.idEquino = 
+        AND problemas.idEstado = 3
+LIMIT 1

@@ -1,0 +1,1 @@
+2014/07/14 00:51:19 - 8282 - ajx.cmb.equinos_gen.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.equinos_genetica' doesn't exist - sql: SELECT equinos_genetica.id AS 'v',equinos_genetica.nombre AS 't' FROM equinos_genetica WHERE 1=1 ORDER BY equinos_genetica.nombre ASC

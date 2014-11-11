@@ -1,0 +1,35 @@
+2014/06/27 18:40:47 - 5200 - ajx.list.clientes.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.provincias' doesn't exist - sql: SELECT clientes.*
+, provincias.provincia
+, localidades.localidad 
+FROM clientes
+LEFT JOIN provincias ON provincias.id = clientes.id_provincia
+LEFT JOIN localidades ON localidades.id = clientes.id_localidad
+WHERE 1=1 
+ORDER BY clientes.nombre ASC
+2014/07/01 03:15:24 - 9277 - ajx.list.clientes.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_1.provincias' doesn't exist - sql: SELECT clientes.*
+, provincias.provincia
+, localidades.localidad 
+FROM clientes
+LEFT JOIN provincias ON provincias.id = clientes.id_provincia
+LEFT JOIN localidades ON localidades.id = clientes.id_localidad
+WHERE 1=1 
+ORDER BY clientes.nombre ASC
+2014/07/14 02:03:09 - 4685 - ajx.list.clientes.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT clientes.*
+, dir_provincias.provincia
+, dir_localidades.localidad
+FROM clientes
+LEFT JOIN dir_provincias ON dir_provincias.id = clientes.id_provincia
+LEFT JOIN dir_localidades ON dir_localidades.id = clientes.id_localidad
+WHERE 1=1 
+ORDER BY clientes.nombre ASC
+2014/07/14 02:18:00 - 22031 - ajx.list.clientes.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'provincias.nombre AS 'provincia',
+        localidades.nombre AS 'localidad'
+FROM' at line 3 - sql: SELECT  duenios.*,
+        duenios.idDuenio AS 'id'
+        provincias.nombre AS 'provincia',
+        localidades.nombre AS 'localidad'
+FROM duenios
+LEFT JOIN provincias ON provincias.idProvincia = duenios.idProvincia
+LEFT JOIN localidades ON localidades.idLocalidad = duenios.idLocalidad
+WHERE 1=1 
+ORDER BY duenios.nombre ASC

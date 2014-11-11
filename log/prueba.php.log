@@ -1,0 +1,6 @@
+2014/02/06 17:10:41 - 7519 - prueba.php - SQL: ERROR: -1 - No fue posible conectarse al host 201.216.232.39 - sql: Access denied for user 'ithbr-admin@localhost'@'190.210.139.226' (using password: YES)
+2014/02/06 17:10:41 - 7519 - prueba.php - SQL: ERROR:  -  - sql: SET NAMES 'utf8'
+2014/02/06 17:10:41 - 7519 - prueba.php - SQL: ERROR:  -  - sql: SELECT * FROM clientes
+2014/02/10 11:47:38 - 7065 - prueba.php - SQL: ERROR: -1 - No fue posible conectarse al host 201.216.232.39 - sql: Access denied for user 'ithbr-admin'@'saturno.xmundo.net' (using password: YES)
+2014/02/10 11:47:38 - 7065 - prueba.php - SQL: ERROR:  -  - sql: SET NAMES 'utf8'
+2014/02/10 11:47:38 - 7065 - prueba.php - SQL: ERROR:  -  - sql: SELECT * FROM clientes

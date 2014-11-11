@@ -1,0 +1,25 @@
+2014/05/19 01:54:22 - 1720 - ajx.bbdd.info.exportar.php - SQL: ERROR: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id_lugar
+FROM clientes
+WHERE 1=1
+ORDER BY clientes.id ASC' at line 3 - sql: SELECT clientes.id
+, clientes.nombre
+clientes.id_lugar
+FROM clientes
+WHERE 1=1
+ORDER BY clientes.id ASC
+2014/07/14 17:07:15 - 21129 - ajx.bbdd.info.exportar.php - SQL: ERROR: 1146 - Table 'brasil_ithealth_com_ar_testAriel.clientes' doesn't exist - sql: SELECT clientes.id
+, clientes.nombre
+,clientes.id_lugar
+, 0 AS 'offline'
+FROM clientes
+WHERE 1=1
+ORDER BY clientes.id ASC
+2014/07/14 17:07:15 - 21129 - ajx.bbdd.info.exportar.php - SQL: ERROR: 1054 - Unknown column 'equinos.id' in 'field list' - sql: SELECT equinos.id
+, equinos.nombre
+, equinos.nacimiento
+, equinos.obs
+, equinos.id_duenio
+, 0 AS 'offline'
+FROM equinos
+WHERE 1=1
+ORDER BY equinos.id ASC
