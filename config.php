@@ -24,16 +24,7 @@ define('DB_NAME', 'brasil_ithealth_com_ar_testAriel');
 define('DB_NAME_DEVEL', '');
 define('DB_SERVER', 'brasil_ithealth_com_ar_testAriel');
 
-if (DEVEL) {
-	define('DB_HOST', 'localhost');
-	define('DB_USR', 'root');
-	define('DB_PSS', 'minS4NC0CH0seg');
-} else {
-	#define('DB_HOST', '201.216.232.39');
-	define('DB_HOST', 'localhost');
-	define('DB_USR', 'ithbr-admin');
-	define('DB_PSS', 'zicopeledinho1970');
-}
+
 
 $__MySQL_server_array = array(DB_SERVER => array('host' => DB_HOST, 'user' => DB_USR, 'password' => DB_PSS));
 
